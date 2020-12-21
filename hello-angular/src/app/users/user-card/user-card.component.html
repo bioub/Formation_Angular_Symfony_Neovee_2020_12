@@ -1,0 +1,12 @@
+<div class="title">
+  <span>{{ user.name }}</span>
+  <button (click)="this.toggleExpand.emit(user)">
+    {{ user.expanded ? "▾" : "▸" }}
+  </button>
+</div>
+
+<div class="body" *ngIf="user.expanded">
+  <p>Email : {{ user.email }}</p>
+
+  <p>Phone : {{ user.phone }}</p>
+</div>

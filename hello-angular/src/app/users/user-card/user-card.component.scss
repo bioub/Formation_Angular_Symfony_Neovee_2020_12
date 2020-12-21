@@ -1,0 +1,26 @@
+$color: rgb(150, 165, 237);
+
+:host {
+  margin: 1em 0;
+  display: block;
+}
+
+.title {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid $color;
+  background-color: $color;
+  padding: 5px;
+  display: flex;
+
+  button {
+    margin-left: auto;
+  }
+}
+
+.body {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid $color;
+  padding: 5px;
+}

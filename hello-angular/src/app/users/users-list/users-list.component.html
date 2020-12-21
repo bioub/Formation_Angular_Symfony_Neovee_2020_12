@@ -1,0 +1,5 @@
+<app-user-card
+  *ngFor="let user of users"
+  [user]="user"
+  (toggleExpand)="toggleExpand($event)"
+></app-user-card>
