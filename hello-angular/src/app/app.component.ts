@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'hello-angular';
+
+  languages = ['en', 'fr', 'es'];
+
+  selectedLanguage = 'fr';
+
+  changeLanguage(language: string) {
+    this.selectedLanguage = language;
+  }
 }

@@ -1,1 +1,3 @@
 <router-outlet></router-outlet>
+
+<app-select [items]="languages" [selected]="selectedLanguage" (selectedChange)="changeLanguage($event)"></app-select>

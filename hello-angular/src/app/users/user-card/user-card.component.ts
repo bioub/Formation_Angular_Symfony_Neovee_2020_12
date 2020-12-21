@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { User } from 'src/app/shared/models/user';
+import { User } from 'src/app/shared/model';
 
 @Component({
   selector: 'app-user-card',
@@ -9,7 +9,7 @@ import { User } from 'src/app/shared/models/user';
 export class UserCardComponent implements OnInit {
 
   @Input() user: User = {};
-  @Output() toggleExpand = new EventEmitter();
+  @Output() toggleExpand = new EventEmitter<User>();
 
   constructor() { }
 

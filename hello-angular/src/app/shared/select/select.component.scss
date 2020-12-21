@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  max-width: 200px;
+}
+
+.selected {
+  border: 1px solid black;
+  padding: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.items {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.item {
+  padding: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #efefef;
+  }
+}
+
