@@ -1,6 +1,6 @@
 <div class="title">
   <span>{{ user.name }}</span>
-  <button (click)="this.toggleExpand.emit(user)">
+  <button (click)="toggleExpand.emit(user)">
     {{ user.expanded ? "▾" : "▸" }}
   </button>
 </div>

@@ -1,0 +1,13 @@
+<input [formControl]="search" placeholder="Type at least 3 letters" />
+<div class="results" *ngIf="!loading">
+  <div class="result" *ngFor="let result of results">
+    <img [src]="result.avatar_url" />
+    {{result.login}}
+  </div>
+</div>
+
+<div *ngIf="loading">Loading</div>
+
+
+
+<div *ngIf="err">{{err}}</div>
